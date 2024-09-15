@@ -1,0 +1,156 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+/* Стили для header */
+.header {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    height: 40px;
+    text-align: center;
+    font-size: 12px;
+
+}
+
+/* Стили для контента */
+.content {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    
+    position: relative;
+    height: auto;
+    
+}
+
+.content h2 {
+    color: white;
+    font-size: 30px;
+}
+
+/* Фигура в верхнем левом углу с закругленными углами */
+.box {
+    width: 100px;
+    height: 100px;
+    border: 5px solid white;
+    float: left;
+    margin-right: 20px;
+    border-top-left-radius: 25px; /* Сглаживание верхнего левого угла */
+    border-bottom-right-radius: 25px; /* Сглаживание нижнего правого угла */
+}
+
+/* Ссылки */
+.content a {
+    color: red;
+    text-decoration: none;
+    display: block;  
+    text-align:center;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.space_text {
+    word-spacing: 15px;
+}
+.space_letters{
+    letter-spacing: 4px;
+}
+/* Списки */
+ul {
+    list-style: disc;
+    padding-left: 0;
+    
+}
+
+ul li {
+    color: white;
+    margin-bottom: 5px;
+}
+
+/* Визуальные стили текста */
+i {
+    font-style: italic;
+}
+
+
+
+u {
+    text-decoration: underline;
+}
+
+del {
+    text-decoration: line-through;
+}
+.wrap {
+    display: flex;
+    flex-flow: row wrap;
+    
+  }
+  .left {
+    width: auto;
+    flex-grow: 0;
+    flex-shrink: 0;
+
+  }
+  .right {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto
+  }
+/* Таблица с числами */
+.grid-container {
+    display: grid;
+    
+    grid-template-columns: repeat(3, 40px);
+    grid-template-rows: repeat(3, 40px);    /* Три строки */
+    gap: 5px;
+    
+    margin-left: 20px;
+}
+
+.grid-item {
+    width: 40px;
+    height: 40px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+}
+
+
+/* Прямоугольник с цифрой 1 (зеленый, двойной ширины) */
+.item1 {
+    grid-row: span 2; /* Прямоугольник шире на 2 колонки */
+    background-color: green;
+    height: 100%;
+}
+
+/* Прямоугольник с цифрой 7 (красный, двойной ширины) */
+.item7 {
+    grid-column: span 2; /* Прямоугольник шире на 2 колонки */
+    background-color: red;
+    width: 100%;
+}
+
+.left_bot_img{
+    margin-left: 85%;
+    margin-top: 20px;
+}
+/* Стили для footer */
+.footer {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+}
